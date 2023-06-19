@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:wght@400;500;700;800;900&display=swap');
+
+
+
+
+
+
+/*============================*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a 
+{
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    margin: 20px;
+}
+
+h1{
+    position: relative;
+    margin-top: 40px auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 6vw;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 0.5vw #000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 90%;
+    color:  #12d4e5 ;
+    -webkit-text-stroke: 0 #141414;
+    border-right: 2px solid  #12d4e5 ;
+    overflow: hidden;
+    animation: animateText 6.5s linear infinite;
+}
+
+
+div img{
+    min-width: 420px;
+    height: 50vh;
+}
+header{
+    background-color: #000;
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .list-itens
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 260px;
+    width: 100%;
+    
+}
+
+.list-itens li a 
+{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #122a57;
+    border-radius: 20px;
+    width: 80px;
+    text-decoration: none;
+    margin-top: 12px;
+    
+}
+
+header .menu
+{
+    justify-content: space-between;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 992px;
+    margin: auto;   
+    width: 100%;
+    min-width: 320px;
+}
+
+
+.show-project
+{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.show-project .show h2{
+    font-size: 32px;
+    text-align: left;
+    color: #122a57;
+    margin: 20px;
+    
+}
+.show-project .show p{
+    font-size: 1.5em;
+    text-align: left;
+    color: #122a57;
+    margin: 20px;
+    
+}
+
+.btn
+{
+    background-color: #122a57;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+.btn1
+{
+    background-color: #122a57;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+/*===== IDS ======*/
+
+
+#project{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#project h2{
+    font-size: 32px;
+    color: #122a57;
+    text-align: left;
+
+}
+
+
+
+#project p{
+    text-align: left;
+    letter-spacing: 2.75px;
+    font-size: 1.5em;
+    color: #122a57;
+    margin: 5px;
+    
+}
+
+
+#project img{
+    min-width: 420px;
+}
+
+/*===== Animations =====*/
+@keyframes animateVS{
+    0%
+    {
+        opacity: 0;
+        transform: rotate(90deg);
+        filter: blur(100px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotate(0deg);
+        filter: blur(0px);
+    }
+}
+@keyframes animateText{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
